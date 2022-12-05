@@ -11,24 +11,13 @@ public class Main {
         System.out.println(fullName);
 
 
+
         System.out.println("\n=====Task2=====");
 
-        String fullNameUp="" + fullName.charAt(0);
+        String fullNameUp= fullName.toUpperCase();
 
-        for (int i = 1; i < fullName.length(); i++) {
-            if (fullName.charAt(i) == ' '){
-
-                fullNameUp+=' ';
-
-                fullNameUp += fullName.charAt(i+1);
-                i++;
-                continue;
-            }
-            char a = fullName.charAt(i);
-            a -= 32;
-            fullNameUp+=a;
-        }
         System.out.println("Данные ФИО сотрудника для заполнения отчета — " + fullNameUp);
+
 
 
         System.out.println("\n=====Task3=====");
@@ -38,12 +27,7 @@ public class Main {
         fullName3 = fullName3.replace('ё','е');
 
         System.out.println(fullName3);
-
-
-
-
     }
-
 }
 
 
